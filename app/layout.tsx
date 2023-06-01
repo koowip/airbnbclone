@@ -3,6 +3,7 @@ import { Nunito } from 'next/font/google'
 import Navbar from './components/navbar/Navbar'
 import ClientOnly from './components/ClientOnly'
 import RegisterModal from './components/modals/RegisterModal'
+import ToasterProvider from './Providers/ToasterProvider'
 
 export const metadata = {
   title: 'Airbnb',
@@ -24,6 +25,7 @@ export default function RootLayout({
         <ClientOnly>
           <RegisterModal />
           <Navbar />
+          <ToasterProvider/>
         </ClientOnly>
         {children}
         </body>
