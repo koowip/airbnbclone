@@ -10,11 +10,9 @@ import useRegisterModal from '@/app/hooks/useRegisterModal';
 import Modal from './Modal';
 import Heading from '../Heading';
 import Input from '../Inputs/Input';
-import { Interface } from 'readline';
 import toast from 'react-hot-toast';
 import Button from '../Button';
 import useLoginModal from '@/app/hooks/useLoginModal';
-import { callbackify } from 'util';
 import { useRouter } from 'next/navigation';
 
 const LoginModal = () => {
@@ -90,13 +88,13 @@ const LoginModal = () => {
                   outline 
                   label='Continue with google'
                   icon={FcGoogle}
-                  onClick={()=> {}}
+                  onClick={()=> signIn('google')}
               />
               <Button 
                   outline 
                   label='Continue with github'
                   icon={AiFillGithub}
-                  onClick={()=> {}}
+                  onClick={()=> signIn('github')}
               />
               <div
                   className='
