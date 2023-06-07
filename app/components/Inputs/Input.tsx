@@ -35,7 +35,6 @@ const Input: React.FC<InputProps> = ({
                         left-2"
                 />
             )}
-
             <input 
                 id={id}
                 disabled={disabled}
@@ -80,8 +79,6 @@ const Input: React.FC<InputProps> = ({
             >
                 {label}
             </label>
-
-
         </div>
     );
 }
