@@ -92,7 +92,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
               group-hover:scale-110
               transition"
           />
-          <div className="aboslute top-3 right-3">
+          <div className="absolute top-3 right-3">
             <HeartButton 
               listingId={data.id}
               currentUser={currentUser}
